@@ -1,4 +1,5 @@
 📬 Django Contact Form Loyihasi
+
 Ushbu loyiha oddiy aloqa formasini (Contact Form) yaratishga qaratilgan bo‘lib, foydalanuvchi tomonidan yuborilgan xabarlarni ma’lumotlar bazasiga saqlaydi va ularni jadval ko‘rinishida ko‘rsatadi.
 
 📌 Loyihaning asosiy funksiyalari:
