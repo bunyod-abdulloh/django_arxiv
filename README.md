@@ -3,6 +3,7 @@
 Ushbu loyiha oddiy aloqa formasini (Contact Form) yaratishga qaratilgan bo‘lib, foydalanuvchi tomonidan yuborilgan xabarlarni ma’lumotlar bazasiga saqlaydi va ularni jadval ko‘rinishida ko‘rsatadi.
 
 📌 Loyihaning asosiy funksiyalari:
+
 Foydalanuvchi: ism, familiya, telefon, email va xabar kiritadi
 
 Forma orqali yuborilgan xabarlar POST orqali serverga jo‘natiladi
@@ -14,6 +15,7 @@ Admin (yoki har qanday foydalanuvchi) barcha xabarlarni /xabarlar sahifasida ko�
 Bootstrap yordamida chiroyli frontend dizayni
 
 🛠 Texnologiyalar:
+
 Python 3.10+
 
 Django 5.x
@@ -47,6 +49,7 @@ python manage.py migrate
 python manage.py runserver
 
 🗃 Ma’lumotlar bazasi modeli
+
 ContactMessage modeli quyidagi maydonlarni o‘z ichiga oladi:
 
 first_name – Foydalanuvchining ismi
@@ -61,10 +64,9 @@ message – Yuborilgan xabar matni
 
 created_at – Yaratilgan vaqt (avtomatik)
 
-📷 Ekran ko‘rinishlari (ixtiyoriy qo‘shishingiz mumkin):
-docs/ papkasiga skrinshotlar joylab, README ichida <img> orqali ulashingiz mumkin.
 
 ✍️ Muallif
+
 Ism: Bunyod Abdulloh
 
 Telegram: @muhib_dev
