@@ -1,8 +1,8 @@
-📬 Django Contact Form Loyihasi
+# 📬 Django Contact Form Loyihasi
 
 Ushbu loyiha oddiy aloqa formasini (Contact Form) yaratishga qaratilgan bo‘lib, foydalanuvchi tomonidan yuborilgan xabarlarni ma’lumotlar bazasiga saqlaydi va ularni jadval ko‘rinishida ko‘rsatadi.
 
-📌 Loyihaning asosiy funksiyalari:
+# 📌 Loyihaning asosiy funksiyalari:
 
 Foydalanuvchi: ism, familiya, telefon, email va xabar kiritadi
 
@@ -14,7 +14,7 @@ Admin (yoki har qanday foydalanuvchi) barcha xabarlarni /xabarlar sahifasida ko�
 
 Bootstrap yordamida chiroyli frontend dizayni
 
-🛠 Texnologiyalar:
+# 🛠 Texnologiyalar:
 
 Python 3.10+
 
@@ -24,21 +24,25 @@ SQLite (default)
 
 Bootstrap 5 (CDN orqali ulangan)
 
-🖥 Sahifalar:
+# 🖥 Sahifalar:
 
 URL	Tavsif
 
 /	Asosiy sahifa, foydalanuvchi kontakt formasini to‘ldiradi
 /xabarlar	Hamma yuborilgan xabarlar ro‘yxatini ko‘rsatadi
 
-🔧 Ishga tushirish bo‘yicha ko‘rsatma
+# 🔧 Ishga tushirish bo‘yicha ko‘rsatma
 
 bash
 
 git clone https://github.com/bunyod-abdulloh/django_arxiv.git
+
 cd django_arxiv
+
 python -m venv venv
+
 venv\Scripts\activate  # Linux/macOS: source venv/bin/activate
+
 pip install -r requirements.txt
 
 # Migratsiyalarni bajarish
