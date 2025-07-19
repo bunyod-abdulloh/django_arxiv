@@ -1,78 +1,84 @@
 # 📬 Django Contact Form Loyihasi
 
-Ushbu loyiha oddiy aloqa formasini (Contact Form) yaratishga qaratilgan bo‘lib, foydalanuvchi tomonidan yuborilgan xabarlarni ma’lumotlar bazasiga saqlaydi va ularni jadval ko‘rinishida ko‘rsatadi.
+Oddiy kontakt formasini yaratish uchun mo‘ljallangan loyiha. Foydalanuvchi yuborgan xabarlar ma’lumotlar bazasiga saqlanadi va admin tomonidan ko‘riladi.
 
-# 📌 Loyihaning asosiy funksiyalari:
+---
 
-Foydalanuvchi: ism, familiya, telefon, email va xabar kiritadi
+## 📌 Asosiy Funksiyalar
 
-Forma orqali yuborilgan xabarlar POST orqali serverga jo‘natiladi
+✅ Foydalanuvchi quyidagi maydonlarni to‘ldiradi:
+- Ism
+- Familiya
+- Telefon raqami
+- Email manzili
+- Xabar matni
 
-Xabarlar SQLite ma’lumotlar bazasida saqlanadi
+✅ Yuborilgan xabarlar:
+- `POST` so‘rovi orqali serverga yuboriladi
+- `SQLite` bazasiga saqlanadi
+- `/xabarlar` sahifasida ro‘yxat ko‘rinishida ko‘rsatiladi
 
-Admin (yoki har qanday foydalanuvchi) barcha xabarlarni /xabarlar sahifasida ko‘rishi mumkin
+✅ Frontend:
+- `Bootstrap 5` yordamida soddaligi va chiroyli interfeys
 
-Bootstrap yordamida chiroyli frontend dizayni
+---
 
-# 🛠 Texnologiyalar:
+## 🛠 Texnologiyalar
 
-Python 3.10+
+- ⚙️ Python 3.10+
+- 🌐 Django 5.x
+- 🗄 SQLite (standart)
+- 🎨 Bootstrap 5 (CDN orqali ulangan)
 
-Django 5.x
+---
 
-SQLite (default)
+## 🖥 Sahifalar
 
-Bootstrap 5 (CDN orqali ulangan)
+| URL            | Tavsif                                                  |
+|----------------|----------------------------------------------------------|
+| `/`            | Asosiy sahifa. Foydalanuvchi aloqa formasini to‘ldiradi |
+| `/xabarlar`    | Admin (yoki foydalanuvchi) barcha xabarlarni ko‘radi     |
 
-# 🖥 Sahifalar:
+---
 
-URL	Tavsif
+## 🗃 Ma’lumotlar Bazasi Modeli
 
-/	Asosiy sahifa, foydalanuvchi kontakt formasini to‘ldiradi
-/xabarlar	Hamma yuborilgan xabarlar ro‘yxatini ko‘rsatadi
+### `ContactMessage` modelidagi maydonlar:
 
-# 🔧 Ishga tushirish bo‘yicha ko‘rsatma
+| Maydon nomi   | Tavsif                        |
+|---------------|-------------------------------|
+| `first_name`  | Foydalanuvchining ismi        |
+| `last_name`   | Familiyasi                    |
+| `phone`       | Telefon raqami                |
+| `email`       | Email manzili                 |
+| `message`     | Yuborilgan xabar              |
+| `created_at`  | Yaratilgan vaqt (avtomatik)   |
 
-bash
+---
 
+## 🚀 Ishga tushirish (Local)
+
+```bash
+# 1. Loyihani klonlash
 git clone https://github.com/bunyod-abdulloh/django_arxiv.git
-
 cd django_arxiv
 
+# 2. Virtual muhit yaratish
 python -m venv venv
-
 venv\Scripts\activate  # Linux/macOS: source venv/bin/activate
 
+# 3. Talablarni o‘rnatish
 pip install -r requirements.txt
 
-# Migratsiyalarni bajarish
+# 4. Migratsiyalar
 python manage.py makemigrations
 python manage.py migrate
 
-# Serverni ishga tushurish
+# 5. Serverni ishga tushurish
 python manage.py runserver
 
-🗃 Ma’lumotlar bazasi modeli
 
-ContactMessage modeli quyidagi maydonlarni o‘z ichiga oladi:
-
-first_name – Foydalanuvchining ismi
-
-last_name – Familiyasi
-
-phone – Telefon raqami
-
-email – Elektron pochta manzili
-
-message – Yuborilgan xabar matni
-
-created_at – Yaratilgan vaqt (avtomatik)
-
-
-✍️ Muallif
-
-Ism: Bunyod Abdulloh
-
-Telegram: @muhib_dev
-
-GitHub: github.com/bunyod-abdulloh
+##✍️ Muallif
+👤 Ism: Bunyod Abdulloh
+📬 Telegram: @muhib_dev
+💻 GitHub: github.com/bunyod-abdulloh
