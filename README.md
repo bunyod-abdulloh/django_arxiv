@@ -61,7 +61,7 @@ Oddiy kontakt formasini yaratish uchun mo‘ljallangan loyiha. Foydalanuvchi yub
 ```bash
 # 1. Loyihani klonlash
 git clone https://github.com/bunyod-abdulloh/django_arxiv.git
-cd django_arxiv
+cd project
 
 # 2. Virtual muhit yaratish
 python -m venv venv
@@ -78,7 +78,7 @@ python manage.py migrate
 python manage.py runserver
 
 
-##✍️ Muallif
+✍️ Muallif
 👤 Ism: Bunyod Abdulloh
 📬 Telegram: @muhib_dev
 💻 GitHub: github.com/bunyod-abdulloh
